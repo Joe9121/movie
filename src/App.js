@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import './styles/App.css';
-import MovieCard from './MovieCard';
-import AboutUs from './about_us.js';
-import ContactUs from './ContactUs.js';
-import MovieDetails from './MovieDetails.tsx';
+import MovieCard from './components/MovieCard.jsx';
+import AboutUs from './pages/about_us.js';
+import ContactUs from './pages/ContactUs.js';
+import MovieDetails from './components/MovieDetails.tsx';
 
 
 const API_URL = 'https://omdbapi.com?apikey=fe2f6c44';

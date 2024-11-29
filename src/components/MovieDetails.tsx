@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import './MovieDetails.css';  // Import the CSS file
+import '../styles/MovieDetails.css';  // Import the CSS file
 
 // Define the type for movie details
 interface MovieDetailsType {

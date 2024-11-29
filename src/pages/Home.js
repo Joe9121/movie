@@ -1,5 +1,5 @@
 import React from "react";
-import MovieCard from "./MovieCard";
+import MovieCard from "../components/MovieCard";
 
 function Home(){
     return ({ movies, searchTerm, setSearchTerm, searchMovies }) => (
