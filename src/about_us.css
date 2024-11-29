@@ -1,0 +1,105 @@
+
+/* General styles for the About Us page */
+.about-us-container {
+    font-family: 'Arial', sans-serif;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: #f8f9fa;  /* Light text color for dark background */
+    line-height: 1.6;
+    background-color: #343a40; /* Dark grey background */
+  }
+  
+  .about-us-container h1 {
+    text-align: center;
+    color: #4CAF50;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+  }
+  
+  /* Mission Section */
+  .mission, .team, .values, .history, .contact {
+    margin-bottom: 40px;
+  }
+  
+  .mission h2, .team h2, .values h2, .history h2, .contact h2 {
+    font-size: 1.8rem;
+    color: #f8f9fa; /* Light colored text for headings */
+    margin-bottom: 15px;
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 5px;
+  }
+  /* Team Section */
+  .team-members {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .team-member {
+    background: #495057; /* Slightly lighter grey background */
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    color: #f8f9fa;
+    flex: 1 1 calc(33.333% - 20px); /* Adjust the width to fit three in a row with gap */
+  }
+  
+  .team-member:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .team-member h3 {
+    margin-top: 0;
+    color: #4CAF50;
+  }
+  
+  .team-member p {
+    margin: 10px 0;
+  }
+  
+  /* Values Section */
+  .values ul {
+    padding-left: 20px;
+  }
+  
+  .values li {
+    margin-bottom: 10px;
+    list-style: circle;
+    font-size: 1.1rem;
+    color: #f8f9fa;
+  }
+  
+  /* History Section */
+  .history p {
+    text-align: justify;
+    color: #f8f9fa;
+  }
+  
+  /* Contact Section */
+  .contact a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .contact a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .about-us-container {
+        padding: 10px;
+    }
+  
+    .team-members {
+        flex-direction: column;
+    }
+  
+    .about-us-container h1 {
+        font-size: 2rem;
+    }
+  }
