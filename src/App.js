@@ -56,7 +56,7 @@ const App = () => {
             <div className="app">
                 {/* Navbar */}
                 <header className="header">
-                    <h1 className="title">Movie Center</h1>
+                    <h1 className="title">Movie Mania</h1>
                     <nav className="navbar">
                         <ul>
                             <li><Link to="/">Home</Link></li>
