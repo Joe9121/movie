@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import './App.css';
+import './styles/App.css';
 import MovieCard from './MovieCard';
 import AboutUs from './about_us.js';
 import ContactUs from './ContactUs.js';
+import MovieDetails from './MovieDetails.tsx';
+
 
 const API_URL = 'https://omdbapi.com?apikey=fe2f6c44';
-
 
 const Home = ({ movies, searchTerm, setSearchTerm, searchMovies }) => (
     <div>
@@ -79,6 +80,8 @@ const App = () => {
                     />
                     <Route path="/about" element={<AboutUs />} />
                     <Route path="/contact" element={<ContactUs />} />
+                    {/* Movie details route */}
+                    <Route path="/movie/:id" element={<MovieDetails />} />
                 </Routes>
             </div>
         </Router>
