@@ -2,6 +2,7 @@ import React from 'react';
 import MovieCard from '../components/MovieCard';  // Import MovieCard component
 
 function Home({ movies, searchTerm, setSearchTerm, searchMovies }){
+  console.log()
     return (
       <div>
         <div className="search">
@@ -11,8 +12,9 @@ function Home({ movies, searchTerm, setSearchTerm, searchMovies }){
             onChange={(e) => setSearchTerm(e.target.value)}
           />
           <img
-            src="https://media.geeksforgeeks.org/wp-content/uploads/20230626112934/search.png"
+            src="https://png.pngtree.com/png-clipart/20200727/original/pngtree-icon-search-orange-png-image_5238731.jpg"
             alt="search icon"
+            style={{ width: '40px', height: '40px' }}
             onClick={() => searchMovies(searchTerm)}
           />
         </div>
@@ -31,4 +33,5 @@ function Home({ movies, searchTerm, setSearchTerm, searchMovies }){
       </div>
     );
   }
+  
 export default Home;
