@@ -18,7 +18,7 @@ function ContactUs ()  {
         let formErrors = {};
         let valid = true;
 
-        if (!formData.name) {
+        if (!formData.name) {   
             valid = false;
             formErrors.name = 'Name is required';
         }
@@ -41,7 +41,7 @@ function ContactUs ()  {
     };
 
     const handleChange = (e) => {
-        const { name, value } = e.target;
+        const { name, value } = e.target;   // name is from the name attribute, 
         setFormData({
             ...formData,
             [name]: value
@@ -49,11 +49,9 @@ function ContactUs ()  {
     };
 
     const handleSubmit = (e) => {
-        e.preventDefault();
+        e.preventDefault(); // prevent default behavior: page reload 
         if (validateForm()) {
-            // Handle form submission
-            console.log('Form submitted:', formData);
-            // Reset form
+            // reset
             setFormData({
                 name: '',
                 email: '',

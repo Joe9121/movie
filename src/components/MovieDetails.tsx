@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import '../styles/MovieDetails.css';  // Import the CSS file
+import '../styles/MovieDetails.css';  
 
-// Define the type for movie details
 interface MovieDetailsType {
     Title: string;
     Year: string;
@@ -13,9 +12,9 @@ interface MovieDetailsType {
     Poster: string;
 }
 
-const MovieDetails = () => {
-    const { id } = useParams<{ id: string }>();  // Make sure to specify that 'id' is a string
-    const [movieDetails, setMovieDetails] = useState<MovieDetailsType | null>(null); // Define the state type
+function MovieDetails ()  {
+    const { id } = useParams<{ id: string }>();  
+    const [movieDetails, setMovieDetails] = useState<MovieDetailsType | null>(null); 
 
     useEffect(() => {
         const fetchMovieDetails = async () => {

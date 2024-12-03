@@ -27,7 +27,6 @@ const App = () => {
     return (
         <Router>
             <div className="app">
-                {/* Navbar */}
                 <header className="header">
                     <h1 className="title">Movie Mania</h1>
                     <nav className="navbar">
@@ -39,7 +38,7 @@ const App = () => {
                     </nav>
                 </header>
 
-                {/* Routes */}
+                
                 <Routes>
                     <Route
                         path="/"
@@ -52,7 +51,6 @@ const App = () => {
                     />
                     <Route path="/about" element={<AboutUs />} />
                     <Route path="/contact" element={<ContactUs />} />
-                    {/* Movie details route */}
                     <Route path="/movie/:id" element={<MovieDetails />} />
                 </Routes>
             </div>

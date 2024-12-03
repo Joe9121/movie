@@ -7,7 +7,6 @@ function AboutUs() {
         <div className="about-us-container bg-dark text-light py-5">
             <div className="container">
                 <h1 className="text-center mb-4">About Us</h1>
-                <div className="about-us-content">
                     <section className="mission mb-5">
                         <h2>Our Mission</h2>
                         <p>
@@ -20,21 +19,21 @@ function AboutUs() {
                             Our team is composed of passionate movie buffs, critics, and industry professionals who are dedicated to bringing you insightful reviews, in-depth articles, and the latest news in the world of cinema. Each member of our team brings a unique perspective and a wealth of experience, ensuring that our content is both diverse and comprehensive.
                         </p>
                         <div className="row">
-                            <div className="col-md-4">
+                            <div className="col-4">
                                 <div className="team-member text-center">
                                     <h3>John Doe</h3>
                                     <p>Founder & CEO</p>
-                                    <p>John has over 20 years of experience in the film industry and is a renowned film critic. His vision for MovieMania is to create a space where movie lovers can connect and share their insights.</p>
+                                    <p>John has over 20 years of experience in the film industry and is a renowned film critic. His vision for MovieMania is to create a space where movie lovers can connect.</p>
                                 </div>
                             </div>
-                            <div className="col-md-4">
+                            <div className="col-4">
                                 <div className="team-member text-center">
                                     <h3>Jane Smith</h3>
                                     <p>Chief Editor</p>
                                     <p>Jane is a seasoned journalist with a passion for storytelling. She oversees all editorial content and ensures that our articles are engaging and informative.</p>
                                 </div>
                             </div>
-                            <div className="col-md-4">
+                            <div className="col-4">
                                 <div className="team-member text-center">
                                     <h3>Emily Johnson</h3>
                                     <p>Community Manager</p>
@@ -64,7 +63,6 @@ function AboutUs() {
                             Have questions or feedback? We'd love to hear from you! Reach out to us at <a href="mailto:contact@moviemania.com">contact@moviemania.com</a> or follow us on social media for the latest updates and discussions.
                         </p>
                     </section>
-                </div>
             </div>
         </div>
     );
