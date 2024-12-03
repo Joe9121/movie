@@ -5,7 +5,7 @@ import MovieCard from './components/MovieCard.jsx';
 import AboutUs from './pages/about_us.js';
 import ContactUs from './pages/ContactUs.js';
 import MovieDetails from './components/MovieDetails.tsx';
-import Home from './pages/home.tsx';
+import Home from './pages/home.jsx';
 
 
 const API_URL = 'https://omdbapi.com?apikey=fe2f6c44';
