@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import '../styles/contact_us.css';
+import axios from 'axios';
 
 function ContactUs ()  {
     const [formData, setFormData] = useState({
@@ -13,6 +14,8 @@ function ContactUs ()  {
         email: '',
         message: ''
     });
+
+    const [successMessage, setSuccessMessage] = useState('');
 
     const validateForm = () => {
         let formErrors = {};
@@ -41,27 +44,33 @@ function ContactUs ()  {
     };
 
     const handleChange = (e) => {
-        const { name, value } = e.target;   // name is from the name attribute, 
+        const { name, value } = e.target;
         setFormData({
             ...formData,
             [name]: value
         });
     };
 
-    const handleSubmit = (e) => {
-        e.preventDefault(); // prevent default behavior: page reload 
+    const handleSubmit = async (e) => {
+        e.preventDefault();
         if (validateForm()) {
-            // reset
-            setFormData({
-                name: '',
-                email: '',
-                message: ''
-            });
-            setErrors({
-                name: '',
-                email: '',
-                message: ''
-            });
+            try {
+                await axios.post('http://localhost:5000/complaint', formData);
+                setSuccessMessage('Complaint submitted successfully!');
+                setFormData({
+                    name: '',
+                    email: '',
+                    message: ''
+                });
+                setErrors({
+                    name: '',
+                    email: '',
+                    message: ''
+                });
+            } catch (error) {
+                console.error('Error submitting complaint', error);
+                setErrors({ message: 'Error submitting complaint. Please try again.' });
+            }
         }
     };
 
@@ -99,6 +108,7 @@ function ContactUs ()  {
                     {errors.message && <span className="error">{errors.message}</span>}
                 </div>
                 <button type="submit">Submit</button>
+                {successMessage && <p style={{ color: 'green' }}>{successMessage}</p>}
             </form>
         </div>
     );

@@ -1,7 +1,7 @@
-/* ContactUs Styles */
+
 .contact-us {
     max-width: 600px;
-    margin: 50px auto 0; /* Added margin-top */
+    margin: 50px auto 0; 
     padding: 30px;
     background-color: var(--background-color);
     border-radius: 10px;
@@ -69,33 +69,8 @@
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-/* .contact-us button:hover {
-    background-color: #0056b3;
-    transform: translateY(-2px);
-} */
-
 .contact-us .error {
     color: #e74c3c;
     font-size: 14px;
     margin-top: 5px;
-}
-
-@media (max-width: 600px) {
-    .contact-us {
-        padding: 20px;
-    }
-
-    .contact-us h2 {
-        font-size: 24px;
-    }
-
-    .contact-us input,
-    .contact-us textarea {
-        font-size: 14px;
-    }
-
-    .contact-us button {
-        font-size: 16px;
-        padding: 12px 20px;
-    }
 }

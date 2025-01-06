@@ -11,7 +11,7 @@
     margin: auto;
 }
 
-/* Title styling */
+
 .movie-details h2 {
     font-size: 2rem;
     font-weight: bold;
@@ -20,17 +20,17 @@
     text-align: center;
 }
 
-/* Image styling */
+
 .movie-details img {
     width: 100%;
     max-width: 400px;
     border-radius: 8px;
     margin-bottom: 20px;
     object-fit: cover;
-    margin: 0 auto; /* Center the image */
+    margin: 0 auto; 
 }
 
-/* Info section for Year, Genre, Director, Actors */
+
 .movie-details p {
     font-size: 1rem;
     line-height: 1.6;
@@ -38,12 +38,12 @@
     margin: 5px 0;
 }
 
-/* Styling for strong elements (for labels like 'Year', 'Genre') */
+
 .movie-details p strong {
     color: var(--text-color);
 }
 
-/* Plot section */
+
 .movie-details p:last-child {
     font-size: 1.1rem;
     color: var(--text-color);
@@ -53,32 +53,9 @@
     max-width: 700px;
 }
 
-/* Loading message styling */
+
 .movie-details h2 {
     font-size: 1.5rem;
     color: var(--text-color);
     text-align: center;
-}
-
-/* Add a responsive layout for smaller screens */
-@media (max-width: 768px) {
-    .movie-details {
-        padding: 15px;
-    }
-
-    .movie-details img {
-        max-width: 100%;
-    }
-
-    .movie-details h2 {
-        font-size: 1.6rem;
-    }
-
-    .movie-details p {
-        font-size: 0.95rem;
-    }
-
-    .movie-details p:last-child {
-        font-size: 1rem;
-    }
 }
